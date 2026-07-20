@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "actvt",
+  "displayName": "Actvt",
+  "version": "1.1.5",
+  "description": "Query live Mac system metrics, listening ports, and Claude Code and Codex session history from Actvt.",
+  "author": {
+    "name": "Oye Collective",
+    "url": "https://actvt.io"
+  },
+  "homepage": "https://actvt.io",
+  "repository": "https://github.com/oye-collective/actvt-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "macos",
+    "monitoring",
+    "observability",
+    "system-metrics",
+    "claude-code",
+    "codex",
+    "ports",
+    "cost-tracking"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "actvt": {
+      "type": "http",
+      "url": "${ACTVT_MCP_URL:-http://127.0.0.1:4096/mcp}",
+      "headersHelper": "${CLAUDE_PLUGIN_ROOT}/scripts/actvt-auth.sh"
+    }
+  }
+}

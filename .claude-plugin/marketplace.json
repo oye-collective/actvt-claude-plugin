@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "actvt",
+  "description": "Connect Claude Code to Actvt, a macOS monitor for your Mac and your AI coding agents.",
+  "owner": {
+    "name": "Oye Collective",
+    "url": "https://actvt.io"
+  },
+  "plugins": [
+    {
+      "name": "actvt",
+      "source": "./",
+      "description": "Query live Mac system metrics, listening ports, and Claude Code and Codex session history from Actvt.",
+      "category": "productivity",
+      "keywords": ["macos", "monitoring", "observability", "claude-code", "codex"]
+    }
+  ]
+}
