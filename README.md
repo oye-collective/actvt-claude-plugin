@@ -24,7 +24,8 @@ claude plugin install actvt@actvt
 
 ## Tools
 
-25 tools in three groups.
+The tools come in three groups. Which ones a client sees depends on the license, because Actvt
+announces only the tools it will answer.
 
 - **System** reads live CPU, GPU, memory, network, thermal pressure and uptime, plus persisted
   history going back up to 30 days.
@@ -33,7 +34,9 @@ claude plugin install actvt@actvt
   AI-agent processes.
 - **Agent sessions** covers spend and token roll-ups, per-project breakdowns, transcript search,
   error patterns, remote sessions over SSH, and resume cues. These require a trial or Premium
-  license. System and port tools work on the free tier.
+  license; remote sessions need any paid tier, and the full transcript tool also needs
+  **Settings > MCP** to allow raw transcripts. System and port tools, and `agent_notify`, work on
+  the free tier.
 
 ## How the token works
 
@@ -42,7 +45,9 @@ install and kept in the Keychain. While the server runs it mirrors the token to 
 file at `~/Library/Application Support/ACTVT/mcp/endpoint.json`, and `scripts/actvt-auth.sh`
 reads it at connection time. No token is stored in this repository.
 
-If Actvt bound a port other than 4096 because it was taken, set `ACTVT_MCP_URL` before starting
+Actvt serves only on 4096. If another app holds that port, Actvt waits and binds as soon as it is
+free, and Settings > MCP shows the server as stopped meanwhile. Versions before 1.3.0 moved to a
+random port instead; for those, set `ACTVT_MCP_URL` to the URL in `endpoint.json` before starting
 Claude Code. Run `scripts/actvt-auth.sh` directly to diagnose a failed connection; it prints the
 reason.
 
