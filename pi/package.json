@@ -1,0 +1,31 @@
+{
+  "name": "actvt-pi",
+  "version": "1.0.0",
+  "description": "Live Mac metrics, listening ports, and Claude Code, Codex and pi session history (cost, tokens, errors, plan limits) from the Actvt macOS app, as a pi skill.",
+  "keywords": [
+    "pi-package",
+    "actvt",
+    "macos",
+    "monitoring",
+    "system-metrics",
+    "claude-code",
+    "codex",
+    "cost-tracking"
+  ],
+  "homepage": "https://actvt.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oye-collective/actvt-claude-plugin.git",
+    "directory": "pi"
+  },
+  "author": "Oye Collective (https://actvt.io)",
+  "license": "MIT",
+  "files": [
+    "skills"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  }
+}
